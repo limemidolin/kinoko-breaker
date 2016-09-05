@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinokoBreaker", "StringWrapOptimizer\KinokoBreaker.csproj", "{3C990965-5DF5-4D29-8D56-7C7DA5A58098}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{92260AA4-F6A4-4D31-BED8-65E43A2EB317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinokoBreaker.Test", "StringWrapOptimizer.Test\KinokoBreaker.Test.csproj", "{2A672843-73B9-4211-BBEA-F80C196427B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{9B4E9B31-7530-4C14-849F-E3002CBB6E1C}"
+	ProjectSection(SolutionItems) = preProject
+		COPYING.txt = COPYING.txt
+		LICENSE.txt = LICENSE.txt
+		README.md.txt = README.md.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinokoBreaker.Launcher", "StringWrapOptimizer.Launcher\KinokoBreaker.Launcher.csproj", "{538C9233-22E9-4974-AF66-DA1E530D822B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3C990965-5DF5-4D29-8D56-7C7DA5A58098} = {3C990965-5DF5-4D29-8D56-7C7DA5A58098}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C990965-5DF5-4D29-8D56-7C7DA5A58098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C990965-5DF5-4D29-8D56-7C7DA5A58098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C990965-5DF5-4D29-8D56-7C7DA5A58098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C990965-5DF5-4D29-8D56-7C7DA5A58098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A672843-73B9-4211-BBEA-F80C196427B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A672843-73B9-4211-BBEA-F80C196427B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A672843-73B9-4211-BBEA-F80C196427B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A672843-73B9-4211-BBEA-F80C196427B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538C9233-22E9-4974-AF66-DA1E530D822B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538C9233-22E9-4974-AF66-DA1E530D822B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538C9233-22E9-4974-AF66-DA1E530D822B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538C9233-22E9-4974-AF66-DA1E530D822B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A672843-73B9-4211-BBEA-F80C196427B7} = {92260AA4-F6A4-4D31-BED8-65E43A2EB317}
+	EndGlobalSection
+EndGlobal
