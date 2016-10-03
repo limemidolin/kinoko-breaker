@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 	ProjectSection(SolutionItems) = preProject
 		COPYING.txt = COPYING.txt
 		LICENSE.txt = LICENSE.txt
-		README.md.txt = README.md.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinokoBreaker.Launcher", "StringWrapOptimizer.Launcher\KinokoBreaker.Launcher.csproj", "{538C9233-22E9-4974-AF66-DA1E530D822B}"

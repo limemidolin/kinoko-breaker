@@ -41,7 +41,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="app.manifest" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -54,10 +56,9 @@
   <PropertyGroup>
     <PostBuildEvent>if not exist "$(TargetDir)bin" mkdir "$(TargetDir)bin"
 pushd "$(TargetDir)bin"
-xcopy /y /s /e "$(SolutionDir)$(SolutionName)\bin\$(ConfigurationName)" "$(TargetDir)bin"
-copy /y "$(SolutionDir)README.md.txt" ..
-copy /y "$(SolutionDir)LICENSE.txt" ..
-copy /y "$(SolutionDir)COPYING.txt" ..
+robocopy "$(SolutionDir)$(SolutionName)\bin\$(ConfigurationName)" "$(TargetDir)bin" /if *.exe *.dll *.config *.manifest dicrc COPYING *.dic *.bin /s /XF *.vshost.exe*  /XD app.publish
+xcopy /y "$(SolutionDir)*.txt" ".."
+copy /y "$(SolutionDir)README.md" ..\README.md.txt
 popd</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
